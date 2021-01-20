@@ -1,32 +1,42 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="header">
+      <p class="">#Movienow</p>
     </div>
     <router-view />
   </div>
 </template>
 
 <style lang="scss">
+body {
+  margin: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  background-color: #363232;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  //text-align: center;
   color: #2c3e50;
+  min-height: 50vw;
 }
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #fa2828;
 
-#nav {
-  padding: 30px;
-
-  a {
+  p {
+    font-family: Roboto;
+    font-style: normal;
     font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+    font-size: 48px;
+    line-height: 96px;
+    text-align: center;
+    letter-spacing: 0.21em;
+    text-transform: uppercase;
+    margin: auto;
+    vertical-align: middle;
+    color: black;
   }
 }
 </style>
